@@ -85,6 +85,20 @@
         
         
     }
+    .row3{
+        margin-top: 10px;
+        background-image: url(./events-bg.png);
+        width: 100%; height: 120vh;
+    }
+    .nav{    
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto auto auto;
+        position: relative;
+        top: 5%;
+        height: 10%;
+    }
+
     .row4{
         display: flex;
         gap: 10px;
@@ -127,6 +141,162 @@
         margin-top: 10px;
         text-align: center;
     }
+    .flip-box {
+  background-color: transparent;
+  width: 25%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: orange;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: orange;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box1 {
+  background-color: transparent;
+  width: 25%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.flip-box-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box1:hover .flip-box-inner1 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front1, .flip-box-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front1 {
+  background-color:orangered;
+  color: black;
+}
+
+.flip-box-back1 {
+  background-color: orangered;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box2 {
+  background-color: transparent;
+  width: 25%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.flip-box-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box2:hover .flip-box-inner2 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front2, .flip-box-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front2 {
+  background-color:lightcoral;
+  color: black;
+}
+
+.flip-box-back2 {
+  background-color: lightcoral;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box3 {
+  background-color: transparent;
+  width: 25%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.flip-box-inner3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box3:hover .flip-box-inner3 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front3, .flip-box-back3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front3 {
+  background-color:indianred;
+  color: black;
+}
+
+.flip-box-back3 {
+  background-color: indianred;
+  color: white;
+  transform: rotateY(180deg);
+}
+    
 
 
     </style>
@@ -139,6 +309,10 @@
           <p class="text1">There you go</p>
           <hr style="border: 3px solid orangered; position: relative; bottom: 70%; width: 15%; left: 20%;">
           <h1>Clean & Minimal <br>Template</h1>
+          <!-- <div class="button">
+            <a href="" s>Discover More</a>
+
+          </div> -->
           
         </div>
         <div class="right1">
@@ -179,31 +353,20 @@
                     <li>+ Donec laoreet efficitur ultrices sit amet enim.</li>
                   </ul>
               </div>
-          <!-- <img src="./best-offer-image.png" alt="">
-          <div class="content">
-          <h2>Modern Web Design
-            <br>
-            <em style="color:rgb(230, 28, 28);">Avalon Theme</em>
-          </h2>
-          <p>
-            Avalon Theme is a full-width modern HTML template for everyone. Please tell your friends about TemplateMo. Thank you. You are allowed <strong>to use this template</strong>for your business. <br><br>
-            You have <strong>no permission</strong>to re-distribute this template as a downloadable ZIP file on any website. If you see this on any website, that means an illegal copy. Please contact us if you have any question.
-          </p>
-          <ul style="opacity: 0.5;">
-            <li>+ Aenean eget ex faucibus, tempor nibh vel.</li>
-            <li>+ Bibendum tortor. Suspendisse a diam viverra.</li>
-            <li>+ Finibus ipsum et, imperdiet felis.</li>
-            <li>+ Donec laoreet efficitur ultrices sit amet enim.</li>
-          </ul>
-        </div> -->
-
+          
         </div>
 
     </div>
 
     <div class="row3">
-<img src="./events-bg.png" width="100%" style="margin-top: 10px;" alt="">
+        <div class="nav">
+            <button>SHOW ALL</button>
+            <button>DESIGN MEETING</button>
+            <button>APP START UP</button>
+            <button>WEB CONFERENCE</button>
 
+        </div>
+        
 
     </div>
     <div class="row4">
@@ -238,46 +401,71 @@
 
     </div>
     <DIV class="row5">
-        <!-- <div class="flip-container" ontouchstart="this.classlist.toggle(hover);">
-            <div class="flipper first-service">
-                <div class="front" style="background-color: aqua;">
-                    <div class="icon">
-                        <img src="./heart-icon.png" alt="">
-                    </div>
-                     <h4>lfhweufuf</h4>
-                     <div class="back">
-                        <p>
-                            njfbewafgiwafgwaehfagdasfd
-                        </p>
-
-                     </div>
-                </div>
+        <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="./heart-icon.png"  style="width:50%;height:50%">
+                <h4>Aliquam finibus est</h4>
+              </div>
+              <div class="flip-box-back">
+                <p>Donec malesuada eu est in mattis. Aenean velit eros, blandit et tortor non, viverra hendrerit velit. Maecenas ut orci nec velit convallis lobortis sit amet ut magna. Ut rhoncus suscipit arcu, sed facilisis risus.</p>
+              </div>
             </div>
-        </div> -->
-        <div class="love" style="background-color: yellow; width: 25%;">
-            <img src="./heart-icon.png" alt="">
-            <h4>Aliquam finibus est</h4>
-        </div>
-        <div class="home" style="background-color: orange; width: 25%;">
-            <img src="./home-icon.png" alt="">
-            <h4>Nullam sed turpis</h4>
-        </div>
-        <div class="share" style="background-color: maroon; width: 25%;">
-            <img src="./revision-icon.png" alt="">
-            <h4>Sed in luctus</h4>
-        </div>
-        <div class="chat" style="background-color: lightcoral; width: 25%;">
-            <img src="./chat-icon.png" alt="">
-            <h4>Fusce congue ipsum</h4>
-        </div>
+          </div>
+
+          <div class="flip-box1">
+            <div class="flip-box-inner1">
+              <div class="flip-box-front1">
+                <img src="./home-icon.png"  style="width:50%;height:50%">
+                <h4>Nullam sed turpis</h4>
+              </div>
+              <div class="flip-box-back1">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas vel diam porttitor, fermentum ante et, ornare elit. Morbi nec diam ex. Pellentesque habitant morbi tristique senectus.</p>
+                <!-- <p>Donec malesuada eu est in mattis. Aenean velit eros, blandit et tortor non, viverra hendrerit velit. Maecenas ut orci nec velit convallis lobortis sit amet ut magna. Ut rhoncus suscipit arcu, sed facilisis risus.</p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-box2">
+            <div class="flip-box-inner2">
+              <div class="flip-box-front2">
+                <img src="./revision-icon.png"  style="width:50%;height:50%">
+                <h4>Sed in luctus</h4>
+              </div>
+              <div class="flip-box-back2">
+                <p>Mauris congue ex eu enim suscipit, in suscipit est efficitur. Donec quis orci malesuada nunc lobortis aliquet et ut lacus. Sed erat magna, fringilla ac imperdiet in, pulvinar quis ante. Maecenas eleifend, sem vitae tristique.</p>
+                <!-- <p>Donec malesuada eu est in mattis. Aenean velit eros, blandit et tortor non, viverra hendrerit velit. Maecenas ut orci nec velit convallis lobortis sit amet ut magna. Ut rhoncus suscipit arcu, sed facilisis risus.</p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-box3">
+            <div class="flip-box-inner3">
+              <div class="flip-box-front3">
+                <img src="./heart-icon.png"  style="width:50%;height:50%">
+                <h4>Fusce congue ipsum</h4>
+              </div>
+              <div class="flip-box-back3">
+                <p>Donec venenatis erat at leo dictum, at dictum eros volutpat. Phasellus in dui sed purus varius hendrerit. Duis ac enim ac orci efficitur condimentum vel eget purus. Sed vel massa nulla. Curabitur consequat sem ac velit sollicitudin ornare.</p>
+                <!-- <p>Donec malesuada eu est in mattis. Aenean velit eros, blandit et tortor non, viverra hendrerit velit. Maecenas ut orci nec velit convallis lobortis sit amet ut magna. Ut rhoncus suscipit arcu, sed facilisis risus.</p> -->
+              </div>
+            </div>
+          </div>
+
+          
+
+          
+
+        
+       
     </DIV>
 
     <div class="row6">
         <div class="Left6">
-            <form>
-                <input type="text" placeholder="Your name...">
-                <input type="email" name="" id="" placeholder="Your email...">
-                <input type="text" name="" id="" placeholder="Subject..."> <br>
+            <form style="margin-top: 15%;">
+                <input style="margin-left: 10%;" type="text" placeholder="Your name...">
+                <input style="margin-left: 10%;" type="email" name="" id="" placeholder="Your email...">
+                <input  style="margin-left: 10%;" type="text" name="" id="" placeholder="Subject..."> <br>
                 <textarea name="" id="" placeholder="Your message..."></textarea>
                 <input type="submit" value="SEND IT NOW">
             </form>
